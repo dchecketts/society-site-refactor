@@ -43,7 +43,7 @@ The following directory layout is intended to cleanly separate source code to ma
 
 `src/scripts/` contains TypeScript/JavaScript files used for interactive content.
 
-`src/styles/` contains all styling for different pages, such as global styling, as well as styling unique to individual pages or components.
+`src/styles/` contains all styling for different pages, such as global styling, as well as styling unique to individual pages or components. Currently, this site uses Tailwind to style, but it's just as flexible for using vanilla CSS.
 
 ## Useful Console Commands for Astro
 
@@ -61,9 +61,10 @@ All commands are run at the root, using a terminal:
 ## Useful Resources
 
 * [Astro Documentation](https://docs.astro.build)
+* [Tailwind CSS Documentation](https://tailwindcss.com/)
 
 ## Future Goals
 * Provide inline documentation throughout pages and components to explain actions.
 * Ensure that variable, component, and functions used are descriptive of the data they contain or what they do.
 * Migrate Tailwind styling to plain CSS now that the majority of the styling is outlined.
-* Outline semester schedule on `/events#semester-schedule`
+* Outline semester schedule on `/events#semester-schedule` (`src/content/events.json`)
