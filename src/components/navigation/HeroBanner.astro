@@ -15,7 +15,7 @@ const { heroImage, imagePosition = 'bg-center', variant = 'centered' } = Astro.p
   <Image
     src={heroImage}
     alt=""
-    priority
+    priority={true}
     aria-hidden="true"
     class={`absolute inset-0 h-full w-full object-cover z-0 ${
       imagePosition === 'bg-top'

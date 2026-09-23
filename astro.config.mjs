@@ -8,7 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://web-design-development-society.github.io/',
-  base: '/webdevsociety',
+  site: 'https://dchecketts.github.io/',
+  base: '/society-site-refactor',
   output: 'static',
 });
