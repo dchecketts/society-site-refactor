@@ -1,14 +1,18 @@
 ---
 import { Image } from 'astro:assets';
-import { ImageMetadata } from 'astro/dist';
+import type { ImageMetadata } from 'astro';
 
 interface Props {
   heroImage: ImageMetadata;
-  imagePositon?: 'bg-center' | 'bg-top' | 'bg-bottom';
+  imagePosition?: 'bg-center' | 'bg-top' | 'bg-bottom';
   variant?: 'landing' | 'centered';
 }
 
-const { heroImage, imagePosition = 'bg-center', variant = 'centered' } = Astro.props;
+const {
+  heroImage,
+  imagePosition = 'bg-center',
+  variant = 'centered',
+} = Astro.props;
 ---
 
 <section id="hero-banner" class="relative flex h-96 w-full overflow-hidden bg-blue-950">
